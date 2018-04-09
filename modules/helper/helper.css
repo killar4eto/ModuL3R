@@ -1,0 +1,185 @@
+/*
+	SIMPLE CSS FOR HELPER
+	Author: Kaloyan Iliev
+	Date: 07/04/2018
+*/
+
+body{
+	overflow: hidden;
+}
+
+.bot-helper{
+	position: absolute;
+	z-index: 9999;
+	width: 160px;
+	height: 160px;
+	margin: 0px;
+	padding: 0px;
+	background: url("./animations/idle_animation.gif");
+	background-repeat: no-repeat;
+	background-size: 160px 120px;
+}
+
+.helper-quote{
+	position: absolute;
+	z-index: 9998;
+	max-width: 160px;
+	height: auto;
+	display: none;
+}
+
+.helper-menu {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    width: 120px;
+    white-space: nowrap;
+    font-family: sans-serif;
+	-webkit-box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    2px 2px 7px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         2px 2px 7px 0px rgba(50, 50, 50, 0.5);
+	list-style-type: none!important;
+	padding: 0px;	
+}
+
+.helper-menu .divider{
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    color: #fff;
+    font-size: 9px;
+    pointer-events: none;
+}
+
+.helper-menu li {
+    padding: 5px 10px;
+}
+
+.helper-menu li:hover {
+    background-color: #4679BD;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* CUBE LOADER */
+.sk-cube-grid {
+	width: 24px;
+	height: 24px;
+  /*
+   * Spinner positions
+   * 1 2 3
+   * 4 5 6
+   * 7 8 9
+   */ }
+
+.sk-cube-grid .sk-cube {
+  float: left;
+  width: 33%;
+  height: 33%;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  background-color: #4c7ff0; }
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s; }
+
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s; }
+
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s; }
+
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s; }
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s; }
+
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s; }
+
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: .0s;
+  animation-delay: .0s; }
+
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s; }
+
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1); } }
+
+@keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1); } }
+	
+/* TIC TAC TOE */
+.tic-tac-toe {
+	display: none;
+	width: 315px;
+	height: auto;
+	margin: 0 auto;
+	top: 100px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tile {
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	vertical-align: top;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+}
+
+.free {
+	background-color: #999;
+}
+
+.free:hover{
+	background-color: #2ED7F2;
+}
+
+.O-play {
+	background-color: blue;
+}
+
+.X-play {
+	background-color: red;
+}

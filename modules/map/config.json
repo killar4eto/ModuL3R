@@ -1,0 +1,11 @@
+{
+	"options": {
+		"width": "auto",
+		"height": 540,
+		"type": "raster",
+		"tile": "osm",
+		"id": "map",
+		"border": "2px",
+		"borderColor": "red"
+	}
+}
